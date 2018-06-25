@@ -100,7 +100,7 @@ router.ws('/subscribe', (ws, req) => {
                     if(err) return logger.error(err);
                     if(!ok) {
                         logger.debug("access denied", msg.bind);
-                        ws.send(json({error: "Access denided"}));
+                        ws.send(json({error: "Access denied"}));
                         return;
                     }
 
